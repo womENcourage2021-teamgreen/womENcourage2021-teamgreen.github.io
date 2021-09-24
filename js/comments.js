@@ -28,7 +28,7 @@ function downvote(idnumber) {
     else {
         newvotes = oldvotes - 1;
     }
-    element.innerHTML = newvotes;
+    element.innerHTML = newvotes; 
 }
 
 function addcomment() {
@@ -40,6 +40,7 @@ function addcomment() {
     if (text.includes("bad")) {
         hidecomment(0);
     }
+    
     else {
         showcomment(0);
     }
