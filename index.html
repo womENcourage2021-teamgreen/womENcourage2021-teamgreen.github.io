@@ -19,6 +19,8 @@
         <link href="css/styles.css" rel="stylesheet" />
         <!-- Chart.js Third party library -->
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+         <!-- Dynamic comments -->
+        <script src="js/comments.js"></script>
 
     </head>
     <body id="page-top">
@@ -26,13 +28,13 @@
         <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
         <nav id="sidebar-wrapper">
             <ul class="sidebar-nav">
-                <li class="sidebar-brand"><a href="#page-top">Trans </a></li>
-                <li class="sidebar-nav-item"><a href="#page-top">Home</a></li>
+                <li class="sidebar-brand"><a href="#page-top">TransEducate.me</a></li>
                 <li class="sidebar-nav-item"><a href="#about">About</a></li>
-                <li class="sidebar-nav-item"><a href="#services">Famous people</a></li>
+                <li class="sidebar-nav-item"><a href="#aim">What is our aim</a></li>
                 <li class="sidebar-nav-item"><a href="#research">Research</a></li>
+                <li class="sidebar-nav-item"><a href="#people">Famous Transwomen</a></li>
+                <li class="sidebar-nav-item"><a href="#comments">Comments</a></li>
                 <li class="sidebar-nav-item"><a href="#contact">Contact</a></li>
-                <li class="sidebar-nav-item"><a href="comments.html">Comments</a></li>
             </ul>
         </nav>
         <!-- Header-->
@@ -60,7 +62,7 @@
             </div>
         </section>
         
-        <section class="content-section bg-primary text-white text-center" id="services">
+        <section class="content-section bg-primary text-white text-center" id="aim">
             <div class="container px-4 px-lg-5">
                 <div class="content-section-heading">
                     <h3 class="text-secondary mb-0"></h3>
@@ -81,7 +83,7 @@
             </div>   
         </section>
         <!-- Callout-->
-        <section class="callout">
+        <section class="callout" id="research">
             <div class="container px-4 px-lg-5 text-center">
                 <h2 class="mx-auto mb-5">
                     Research 
@@ -93,76 +95,188 @@
                  <img class="img-fluid" src="assets/img/publicperception.png" alt="..." /> 
                </div>
         </section>
-        <!-- Portfolio-->
-        <section class="content-section" id="portfolio">
-            <div class="container px-4 px-lg-5">
+        
+        
+        <!-- People-->
+        <section class="content-section" id="people">
+           <div class="container px-4 px-lg-5">
                 <div class="content-section-heading text-center">
                     <h3 class="text-secondary mb-0">Famous Transwomen</h3>
                     <h2 class="mb-5">21st Century</h2>
                 </div>
                 <div class="row gx-0">
                     <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
+                        <a class="portfolio-item" href="https://it.wikipedia.org/wiki/Caitlyn_Jenner">
                             <div class="caption">
                                 <div class="caption-content">
                                     <div class="h2">Caitlyn Jenner</div>
                                     <p class="mb-0"> American media personality and retired Olympic gold medal-winning decathlete</p>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio-1.jpg" alt="..." />
-                        </a>
+                             <img class="img-fluid" src="assets/img/caitlin.jpg" alt="..." />
+                         </a>
                     </div>
                     <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
-                            <div class="caption">
+                        <a class="portfolio-item" href="https://it.wikipedia.org/wiki/Laverne_Cox">
+                           <div class="caption">
                                 <div class="caption-content">
                                     <div class="h2">Laverne Cox</div>
                                     <p class="mb-0">American actress and LGBT advocate</p>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio-2.jpg" alt="..." />
+                            <img class="img-fluid" src="assets/img/laverne.jpg" alt="..." />
                         </a>
                     </div>
                     <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
+                        <a class="portfolio-item" href="https://www.wmagazine.com/story/lauren-foster-pioneering-trans-model">
                             <div class="caption">
                                 <div class="caption-content">
                                     <div class="h2">Lauren Foster</div>
                                     <p class="mb-0"><b>57-year-old</b> South African model.</p>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio-3.jpg" alt="..." />
+                            <img class="img-fluid" src="assets/img/lauren.jpg" alt="..." />
                         </a>
                     </div>
                     <div class="col-lg-6">
-                        <a class="portfolio-item" href="#!">
+                        <a class="portfolio-item" href="https://it.wikipedia.org/wiki/NikkieTutorials">
                             <div class="caption">
                                 <div class="caption-content">
                                     <div class="h2">Nikkie de Jager</div>
                                     <p class="mb-0">Dutch makeup artist and beauty vlogger.</p>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio-4.jpg" alt="..." />
+                            <img class="img-fluid" src="assets/img/nikkie.jpg" alt="..." />
                         </a>
                     </div>
                 </div>
             </div>
         </section>
 
-      
+
+        
+        <!-- Comments-->
+        <section class="content-section bg-light" id="comments">
+            <div class="container px-4 px-lg-5">
+                <div class="content-section-heading text-center">
+                    <h3 class="text-secondary mb-0">Comments</h3>
+                    <h2 class="mb-5">What People Think</h2>
+                </div>
+                <div class="d-flex flex-row add-comment-section mt-4 mb-4">
+                    <input type="text" id="comment-form" class="form-control mr-3" placeholder="Add comment">
+                    <button class="btn btn-primary" type="button" onclick="addcomment()">Comment</button>
+                </div>
+                <div id="all-comments">
+                
+                    <!-- COMMENT 0 DEMO -->
+                    <div class="commented-section mt-2" id="democomment">
+                        <hr/>
+                        <div class="comment-text-sm comment-id-alert-0">
+                            <span>This comment has been marked as offensive. &nbsp;&nbsp; </span>
+                            <span>Do you want to read it anyway?</span> 
+                            <br/> <br/>
+                            <button class="btn btn-primary" type="button" onclick="showcomment(0)">Show anyway</button>
+                        </div>
+                        <div class="comment-text-sm comment-id-0" style="display: none;" >
+                            <span id="newcommenttoshow"></span>
+                        </div>
+                        <div class="reply-section comment-id-0" style="display: none;">
+                            <div class="d-flex flex-row align-items-center voting-icons">
+                                <i class="fa fa-sort-up fa-2x mt-3 hit-voting" onclick="upvote(0)"></i>&nbsp;
+                                <i class="fa fa-sort-down fa-2x mb-3 hit-voting" onclick="downvote(0)"></i>&nbsp;&nbsp;
+                                <span class="ml-2 comment-votes-0">0</span>
+                            </div>
+                            <button class="btn btn-primary" type="button" onclick="hidecomment(0)">Mark as offensive</button>
+                        </div>
+                        <hr/>
+                    </div>
+
+                    <!-- COMMENT 1 GOOD -->
+                    <div class="commented-section mt-2">
+                        <hr/>
+                        <div class="comment-text-sm comment-id-alert-1">
+                            <span>This comment has been marked as offensive. &nbsp;&nbsp; </span>
+                            <span>Do you want to read it anyway?</span> 
+                            <br/> <br/>
+                            <button class="btn btn-primary" type="button" onclick="showcomment(1)">Show anyway</button>
+                        </div>
+                        <div class="comment-text-sm comment-id-1" style="display: none;" >
+                            <span>Everybody deserves love and respect!</span>
+                        </div>
+                        <div class="reply-section comment-id-1" style="display: none;">
+                            <div class="d-flex flex-row align-items-center voting-icons">
+                                <i class="fa fa-sort-up fa-2x mt-3 hit-voting" onclick="upvote(1)"></i>&nbsp;
+                                <i class="fa fa-sort-down fa-2x mb-3 hit-voting" onclick="downvote(1)"></i>&nbsp;&nbsp;
+                                <span class="ml-2 comment-votes-1">76</span>
+                            </div>
+                            <button class="btn btn-primary" type="button" onclick="hidecomment(1)">Mark as offensive</button>
+                        </div>
+                        <hr/>
+                    </div>
+
+                    <!-- COMMENT 2 GOOD -->
+                    <div class="commented-section mt-2">
+                        <hr/>
+                        <div class="comment-text-sm comment-id-alert-2">
+                            <span>This comment has been marked as offensive. &nbsp;&nbsp; </span>
+                            <span>Do you want to read it anyway?</span> 
+                            <br/> <br/>
+                            <button class="btn btn-primary" type="button" onclick="showcomment(2)">Show anyway</button>
+                        </div>
+                        <div class="comment-text-sm comment-id-2" style="display: none;" >
+                            <span>Thanks for the information!</span>
+                        </div>
+                        <div class="reply-section comment-id-2" style="display: none;">
+                            <div class="d-flex flex-row align-items-center voting-icons">
+                                <i class="fa fa-sort-up fa-2x mt-3 hit-voting" onclick="upvote(2)"></i>&nbsp;
+                                <i class="fa fa-sort-down fa-2x mb-3 hit-voting" onclick="downvote(2)"></i>&nbsp;&nbsp;
+                                <span class="ml-2 comment-votes-2">32</span>
+                            </div>
+                            <button class="btn btn-primary" type="button" onclick="hidecomment(2)">Mark as offensive</button>
+                        </div>
+                        <hr/>
+                    </div>
+
+                    <!-- COMMENT 3 BAD -->
+                    <div class="commented-section mt-2">
+                        <hr/>
+                        <div class="comment-text-sm comment-id-alert-3">
+                            <span>This comment has been marked as offensive. &nbsp;&nbsp; </span>
+                            <span>Do you want to read it anyway?</span> 
+                            <br/> <br/>
+                            <button class="btn btn-primary" type="button" onclick="showcomment(3)">Show anyway</button>
+                        </div>
+                        <div class="comment-text-sm comment-id-3" style="display: none;" >
+                            <span>Trans people are bad!</span>
+                        </div>
+                        <div class="reply-section comment-id-3" style="display: none;">
+                            <div class="d-flex flex-row align-items-center voting-icons">
+                                <i class="fa fa-sort-up fa-2x mt-3 hit-voting" onclick="upvote(3)"></i>&nbsp;
+                                <i class="fa fa-sort-down fa-2x mb-3 hit-voting" onclick="downvote(3)"></i>&nbsp;&nbsp;
+                                <span class="ml-2 comment-votes-3">0</span>
+                            </div>
+                            <button class="btn btn-primary" type="button" onclick="hidecomment(3)">Mark as offensive</button>
+                        </div>
+                        <hr/>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        
         
         <!-- Footer-->
         <footer class="footer text-center">
             <div class="container px-4 px-lg-5">
                 <ul class="list-inline mb-5">
                     <li class="list-inline-item">
-                        <a class="social-link rounded-circle text-white mr-3" href="#!"><i class="icon-social-facebook"></i></a>
+                        <a class="social-link rounded-circle text-white mr-3" href="https://www.facebook.com/womencourage"><i class="icon-social-facebook"></i></a>
+                   </li>
+                    <li class="list-inline-item">
+                       <a class="social-link rounded-circle text-white mr-3" href="https://twitter.com/ACMwomENcourage"><i class="icon-social-twitter"></i></a>
                     </li>
                     <li class="list-inline-item">
-                        <a class="social-link rounded-circle text-white mr-3" href="#!"><i class="icon-social-twitter"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a class="social-link rounded-circle text-white" href="#!"><i class="icon-social-github"></i></a>
+                        <a class="social-link rounded-circle text-white" href="https://github.com/womENcourage2021-teamgreen/womENcourage2021-teamgreen.github.io"><i class="icon-social-github"></i></a>
                     </li>
                 </ul>
                 <p class="text-muted small mb-0">Copyright &copy; Transeducate.me 2021</p>
@@ -177,6 +291,8 @@
 
         <!-- Chart 1 -->
         <script src="js/chart1.js"></script>
+        
+        <script>initializecomments();</script>
     </body>
 </html>
 
